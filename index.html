@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Stage to Scale | Turn Applause Into Income</title>
+  <meta name="description" content="A 2-day program in Miami Beach that teaches professional speakers how to make money from the stage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0A0F1C',
+            dark: '#111827',
+            accent: '#D4A373',
+            warm: '#E8C39E'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0A0F1C; color: #E5E7EB; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .btn-accent {
+      background: #D4A373;
+      color: #0A0F1C;
+      transition: all 0.2s ease;
+    }
+    .btn-accent:hover { opacity: 0.9; transform: translateY(-1px); }
+    .btn-outline {
+      border: 1px solid #D4A373;
+      color: #D4A373;
+      transition: all 0.2s ease;
+    }
+    .btn-outline:hover { background: rgba(212, 163, 115, 0.1); }
+    .photo-placeholder {
+      background: linear-gradient(135deg, #1F2937, #374151);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #D4A373;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+    }
+    details summary { cursor: pointer; list-style: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary .chevron { transform: rotate(180deg); }
+    .chevron { transition: transform 0.2s; }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-navy/80 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="font-serif text-xl tracking-wide">From Stage to Scale</div>
+      <div class="flex items-center gap-6">
+        <button onclick="openGuideModal()" class="text-sm text-gray-300 hover:text-accent transition hidden sm:block">Get the Free Guide</button>
+        <a href="#pricing" class="btn-accent px-5 py-2 rounded-full text-sm font-medium">Reserve Your Seat</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center text-center px-6 pt-24 pb-16">
+    <div class="max-w-4xl fade-in">
+      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
+        Turn Applause Into Income.
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+        A 2-day program in Miami Beach that teaches professional speakers how to make money from the stage.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#pricing" class="btn-accent px-8 py-4 rounded-full text-lg font-medium">Reserve Your Seat</a>
+        <button onclick="openGuideModal()" class="btn-outline px-8 py-4 rounded-full text-lg font-medium">Get the Free Guide</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="py-24 px-6 fade-in">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-serif text-4xl md:text-5xl mb-8">Great talks. Standing ovations. Then nothing.</h2>
+      <p class="text-xl text-gray-300 leading-relaxed">
+        No clients. No rebookings. No income. You leave the stage with applause and an empty calendar. The talk was strong. The business result was zero.
+      </p>
+    </div>
+  </section>
+
+  <!-- Method -->
+  <section class="py-24 px-6 bg-dark/50 fade-in">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-serif text-4xl md:text-5xl text-center mb-12">The method</h2>
+      <div class="space-y-8 text-lg leading-relaxed text-gray-300">
+        <p>Behavior first, because you can't coach what you can't see.</p>
+        <p>Then presence. Preparation. And a signature talk you can give again and again.</p>
+        <p class="text-2xl font-serif text-accent text-center my-12">Behavior is the currency of commerce.</p>
+        <p>You learn to read the room, adjust in real time, and turn attention into action. The same skills that move executives and teams now move buyers from the stage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Walk Away With -->
+  <section class="py-24 px-6 fade-in">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-serif text-4xl md:text-5xl text-center mb-12">What you walk away with</h2>
+      <ul class="space-y-6 text-lg text-gray-300">
+        <li class="flex gap-4"><span class="text-accent mt-1">●</span> A signature talk you love giving and audiences love hearing.</li>
+        <li class="flex gap-4"><span class="text-accent mt-1">●</span> Walking on stage calm and owning the room.</li>
+        <li class="flex gap-4"><span class="text-accent mt-1">●</span> Getting asked back and paid.</li>
+        <li class="flex gap-4"><span class="text-accent mt-1">●</span> A proven preparation method so you never wing it again.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Coaches -->
+  <section class="py-24 px-6 bg-dark/50 fade-in">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-serif text-4xl md:text-5xl text-center mb-16">Meet your coaches</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="text-center">
+          <div class="photo-placeholder w-40 h-40 rounded-full mx-auto mb-6">OA</div>
+          <h3 class="font-serif text-2xl mb-4">Dr. Oscar Arias</h3>
+          <p class="text-gray-300 leading-relaxed">Researcher and professor. 20+ years training executives at major corporations to communicate and mobilize large teams. Uses NLP and behavioral science.</p>
+        </div>
+        <div class="text-center">
+          <div class="photo-placeholder w-40 h-40 rounded-full mx-auto mb-6">JA</div>
+          <h3 class="font-serif text-2xl mb-4">Josias Andujar Jr.</h3>
+          <p class="text-gray-300 leading-relaxed">Speaker coach who coaches attendees live through the process. Helps you turn what you learn into a talk you can deliver and sell.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bonuses -->
+  <section class="py-24 px-6 fade-in">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-serif text-4xl md:text-5xl text-center mb-12">The bonuses</h2>
+      <div class="space-y-8 text-lg text-gray-300">
+        <div>
+          <h3 class="text-xl font-medium text-accent mb-2">Leading AI Agents</h3>
+          <p>A session with a guest expert on leading AI agents so your message and business stay ahead.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-medium text-accent mb-2">Beach and Wellness Day</h3>
+          <p>A beach and wellness day in Miami Beach. Sauna, pool, organic food, waterfront venue. Recover and connect after the work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details -->
+  <section class="py-24 px-6 bg-dark/50 fade-in" id="details">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-serif text-4xl md:text-5xl mb-8">Details</h2>
+      <div class="space-y-4 text-lg text-gray-300">
+        <p>2 days. Miami Beach. Limited to 15 people.</p>
+        <p>Dates: <span class="text-accent">[DATES]</span></p>
+        <p>Venue: <span class="text-accent">[VENUE]</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="py-24 px-6 fade-in" id="pricing">
+    <div class="max-w-md mx-auto text-center bg-dark/70 border border-white/10 rounded-2xl p-10">
+      <h2 class="font-serif text-4xl mb-4">$2,500</h2>
+      <p class="text-gray-400 mb-2">per seat</p>
+      <p class="text-accent mb-6">Early-bird <span>[EARLY PRICE]</span> until <span>[DEADLINE]</span></p>
+      <p class="text-sm uppercase tracking-widest text-accent mb-8">Only 15 seats</p>
+      <button onclick="startCheckout()" class="btn-accent w-full py-4 rounded-full text-lg font-medium mb-4">Reserve Your Seat</button>
+      <p class="text-xs text-gray-500">Secure checkout powered by Stripe. Seats close at 15.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-24 px-6 bg-dark/50 fade-in">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-serif text-4xl md:text-5xl text-center mb-12">FAQ</h2>
+      <div class="space-y-4">
+        <details class="border-b border-white/10 py-4">
+          <summary class="flex justify-between items-center text-lg font-medium">Who it's for <span class="chevron text-accent">▼</span></summary>
+          <p class="mt-4 text-gray-300">Professional speakers, coaches, and leaders who get applause but not business from the stage. You already know Tony Robbins, Brian Tracy, or Toastmasters and think you've heard every guru.</p>
+        </details>
+        <details class="border-b border-white/10 py-4">
+          <summary class="flex justify-between items-center text-lg font-medium">Who it's not for <span class="chevron text-accent">▼</span></summary>
+          <p class="mt-4 text-gray-300">Beginners looking for basic speaking skills or people who want to stay on free stages forever.</p>
+        </details>
+        <details class="border-b border-white/10 py-4">
+          <summary class="flex justify-between items-center text-lg font-medium">What's included <span class="chevron text-accent">▼</span></summary>
+          <p class="mt-4 text-gray-300">The full 2-day program, live coaching through the process, the signature talk work, and both bonuses.</p>
+        </details>
+        <details class="border-b border-white/10 py-4">
+          <summary class="flex justify-between items-center text-lg font-medium">Travel and lodging <span class="chevron text-accent">▼</span></summary>
+          <p class="mt-4 text-gray-300">Travel and lodging are not included. We recommend hotels near the waterfront venue in Miami Beach.</p>
+        </details>
+        <details class="border-b border-white/10 py-4">
+          <summary class="flex justify-between items-center text-lg font-medium">Refund policy <span class="chevron text-accent">▼</span></summary>
+          <p class="mt-4 text-gray-300">[POLICY]</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-32 px-6 text-center fade-in">
+    <div class="max-w-3xl mx-auto">
+      <p class="font-serif text-3xl md:text-4xl mb-10 leading-tight">In life, you don't get what you want. You get what you're committed to.</p>
+      <a href="#pricing" class="btn-accent px-10 py-4 rounded-full text-lg font-medium inline-block">Reserve Your Seat</a>
+    </div>
+  </section>
+
+  <footer class="py-12 px-6 text-center text-sm text-gray-500 border-t border-white/5">
+    <p>From Stage to Scale · Miami Beach</p>
+    <p class="mt-2">© 2026. All rights reserved.</p>
+  </footer>
+
+  <!-- Lead Capture Modal -->
+  <div id="guideModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-6">
+    <div class="bg-dark border border-white/10 rounded-2xl max-w-md w-full p-8 relative">
+      <button onclick="closeGuideModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl">&times;</button>
+      <h3 class="font-serif text-2xl mb-2">The 4-Step Speech Preparation Method</h3>
+      <p class="text-gray-400 mb-6 text-sm">Get the free guide. Name, email, and phone.</p>
+      <form id="leadForm" class="space-y-4">
+        <input type="text" name="name" placeholder="Your name" required class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-accent">
+        <input type="email" name="email" placeholder="Email" required class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-accent">
+        <input type="tel" name="phone" placeholder="Phone" required class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-accent">
+        <button type="submit" class="btn-accent w-full py-3 rounded-lg font-medium">Send Me the Guide</button>
+      </form>
+      <p id="formMessage" class="mt-4 text-sm text-accent hidden">Thank you. Check your email for the guide.</p>
+    </div>
+  </div>
+
+  <script>
+    // Smooth reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Modal
+    function openGuideModal() {
+      document.getElementById('guideModal').classList.remove('hidden');
+      document.getElementById('guideModal').classList.add('flex');
+    }
+    function closeGuideModal() {
+      document.getElementById('guideModal').classList.add('hidden');
+      document.getElementById('guideModal').classList.remove('flex');
+    }
+    document.getElementById('guideModal').addEventListener('click', (e) => {
+      if (e.target.id === 'guideModal') closeGuideModal();
+    });
+
+    // Lead form
+    document.getElementById('leadForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData);
+      
+      // TODO: Replace with your backend endpoint to save leads to a database
+      // Example: await fetch('/api/leads', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data) });
+      // For now, log and show success. Connect to Supabase, Vercel KV, Google Sheets, or Formspree.
+      console.log('Lead captured:', data);
+      
+      document.getElementById('leadForm').classList.add('hidden');
+      document.getElementById('formMessage').classList.remove('hidden');
+      
+      // Optional: trigger download or email sequence here
+    });
+
+    // Checkout
+    function startCheckout() {
+      // TODO: Create a Stripe Checkout Session on your backend that checks remaining seats (max 15)
+      // and redirects to Stripe. Or use a Stripe Payment Link and manage inventory manually.
+      // Example backend: POST /api/checkout → returns { url: session.url }
+      // window.location.href = sessionUrl;
+      
+      alert('Secure checkout is ready. Connect your Stripe account and backend to process the $2,500 payment and track the 15 seats.');
+      // Temporary placeholder — replace with real redirect
+      // window.location.href = 'https://buy.stripe.com/your-payment-link';
+    }
+
+    // Close modal on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeGuideModal();
+    });
+  </script>
+</body>
+</html>
